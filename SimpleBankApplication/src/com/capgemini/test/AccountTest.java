@@ -28,6 +28,7 @@ public class AccountTest {
 	public void setUp() throws Exception {
 		MockitoAnnotations.initMocks(this);
 		accountService=new AccountServiceImpl(accountRepository);
+		System.out.println("adding more testcases");
 	}
 
 	@Test(expected=com.capgemini.exception.InsufficientInitialBalanceException.class)
